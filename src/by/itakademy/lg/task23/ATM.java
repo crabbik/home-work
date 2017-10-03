@@ -33,12 +33,14 @@ public class ATM {
 	}
 
 	public boolean cashOut(Integer cash) {
+
 		if (getBalance() < cash) {
 			return false;
 		} else if ((cash % 20 != 0) && (cash % 50 != 0) && (cash % 100 != 0)) {
 			return false;
 
 		}
+		// else if
 		// Дописать тут условия по купюрам и их количеству
 		else {
 			return true;
