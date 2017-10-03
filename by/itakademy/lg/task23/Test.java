@@ -8,7 +8,7 @@ public class Test {
 		ATM atm = new ATM(5, 5, 5);
 		atm.addCount100(1);
 
-		System.out.println(atm.getBalance());
+		System.out.println(atm.cashOut(100));
 
 	}
 
