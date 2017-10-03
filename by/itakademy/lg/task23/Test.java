@@ -6,9 +6,9 @@ public class Test {
 		// TODO Auto-generated method stub
 
 		ATM atm = new ATM(5, 5, 5);
-		atm.addCount20(10);
+		atm.addCount100(1);
 
-		System.out.println(atm);
+		System.out.println(atm.getBalance());
 
 	}
 

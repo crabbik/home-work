@@ -1,36 +1,52 @@
 package by.itakademy.lg.task23;
 
 public class ATM {
-	private int count20;
-	private int count50;
-	private int count100;
+	Integer count20 = 0;
+	Integer count50 = 0;
+	Integer count100 = 0;
 
-	public void addCount20(int add20) {
+	public void addCount20(Integer add20) {
 		this.count20 += add20;
 
 	}
 
-	public void addCount50(int add50) {
+	public int getCount20() {
+		return count20;
+	}
+
+	public void addCount50(Integer add50) {
 		this.count50 += add50;
 
 	}
 
-	public void addCount1000(int add100) {
+	public int getCount50() {
+		return count50;
+	}
+
+	public void addCount100(Integer add100) {
 		this.count100 += add100;
 
 	}
 
-	public boolean cashOut(int cash) {
+	public int getCount100() {
+		return count100;
+	}
+
+	public boolean cashOut(Integer cash) {
 
 		return false;
 
 	}
 
-	ATM(int q, int w, int e) {
-		int count20 = q;
-		int count50 = w;
-		int count100 = e;
+	ATM(int count20, int count50, int count100) {
+		this.count20 = +count20;
+		this.count50 = +count50;
+		this.count100 = +count100;
 
+	}
+
+	public int getBalance() {
+		return (count20 * 20) + (count50 * 50) + (count100 * 100);
 	}
 
 }
