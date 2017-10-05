@@ -3,17 +3,16 @@ package by.itakademy.lg.task19;
 public class Task19 {
 
 	public static void main(String[] args) {
-		// нужно посчитать слова теперь а не пробелы
-		String str = "“екстова€, строка, с несколькими,, зап€тыми.";
-		int n = 0;
-		char symbol;
-		for (int i = 0; i < str.length(); i++) {
-			symbol = str.charAt(i);
-			if (symbol == ' ')
-				n++;
-
+		String str = "    “екстова€, строка, с несколькими, зап€тыми ";
+		str = str.trim();
+		String[] str1 = str.split(" +");
+		int sumWord = 0;
+		for (String word : str1) {
+			sumWord++;
+		
 		}
-		System.out.println("” нас есть " + n + " пробелов");
+
+		System.out.println(" оличество слов "+ sumWord);
 	}
 
 }
