@@ -55,6 +55,10 @@ public class ATM {
 
 	}
 
+	public ATM() {
+		this(0, 0, 0);
+	}
+
 	public int getBalance() {
 		return (count20 * 20) + (count50 * 50) + (count100 * 100);
 	}
