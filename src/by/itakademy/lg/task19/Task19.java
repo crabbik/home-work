@@ -9,10 +9,10 @@ public class Task19 {
 		int sumWord = 0;
 		for (String word : str1) {
 			sumWord++;
-		
+
 		}
 
-		System.out.println("Количество слов "+ sumWord);
+		System.out.println("Количество слов " + sumWord);
 	}
 
 }
