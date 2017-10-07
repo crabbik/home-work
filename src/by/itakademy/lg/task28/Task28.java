@@ -3,33 +3,32 @@ package by.itakademy.lg.task28;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class Task28 {
 
 	public static void main(String[] args) {
-		List<Integer> listPoints = new ArrayList<Integer>();
-		listPoints.add(1);
-		listPoints.add(5);
-		listPoints.add(2);
-		listPoints.add(30);
-		listPoints.add(3);
-		listPoints.add(8);
-		listPoints.add(3);
-		listPoints.add(2);
+		List<Mark> listPoints = new ArrayList<Mark>();
 
-		Iterator<Integer> iterator = listPoints.iterator();
+		for (int i = 0; i < 20; i++) {
+			Random random = new Random();
+			listPoints.add(new Mark("User " + i, i, random.nextInt((5) + 1)));
 
-		int max = listPoints.get(0);
+		}
+		System.out.println(listPoints);
+
+		Iterator<Mark> iterator = listPoints.iterator();
+
+		Mark max = listPoints.get(0);
 
 		while (iterator.hasNext()) {
-			int i = iterator.next();
-			if (max < i) {
-				max = i;
+			Mark next = iterator.next();
+			if (max.getMark() < next.getMark()) {
+				max = next;
 
 			}
 
 		}
-
 		System.out.println(max);
 
 	}
