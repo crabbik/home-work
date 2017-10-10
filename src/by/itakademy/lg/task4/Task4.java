@@ -9,11 +9,11 @@ public class Task4 {
 
 		int c = (a * a) + (b * b);
 		int x = (int) Math.sqrt(c);
-		if (r > x)
-			System.out.println("Можно закрыть отверстие");
-		else
-			System.out.println("Нельзя закрыть отверстие");
-		;
+		if (r > (x / 2)) {
+			System.out.println("РњРѕР¶РЅРѕ Р·Р°РєСЂС‹С‚СЊ");
+		} else {
+			System.out.println("РќРµР»СЊР·СЏ Р·Р°РєСЂС‹С‚СЊ");
+		}
 
 	}
 

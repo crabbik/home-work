@@ -13,7 +13,7 @@ public class Task2 {
 		int day = d % 7;
 		int w = (d - day) / 7;
 
-		System.out.println(w + " недель " + day + " дней " + hour + " часов " + min + " минут " + sec + " секунд");
+		System.out.println(w + " РЅРµРґРµР»СЊ " + day + " РґРЅРµР№ " + hour + " С‡Р°СЃРѕРІ " + min + " РјРёРЅСѓС‚ " + sec + " СЃРµРєСѓРЅРґ");
 
 	}
 
