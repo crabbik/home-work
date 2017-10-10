@@ -3,25 +3,26 @@ package by.itakademy.lg.task12;
 public class Task12 {
 
 	public static void main(String[] args) {
-		int j = 0;
-		Integer number = 20023143;
+		int a = 0;
+		Integer n = 2002323143;
 
-		String numberToString = number.toString();
+		String nToString = n.toString();
 
-		char[] charArray = numberToString.toCharArray();
-		if (charArray.length % 3 == 1)
-			j = 2;
+		char[] charArray = nToString.toCharArray();
+		if (charArray.length % 3 == 1) {
+			a = 2;
+		}
+		if (charArray.length % 3 == 2) {
+			a = 1;
+		}
 
-		if (charArray.length % 3 == 2)
-			j = 1;
-
-		System.out.println(String.format("Число %s в бухгалтерском формате: ", number));
+		System.out.println(String.format("Число %s в бухгалтерском формате: ", n));
 		for (int i = 0; i < charArray.length; i++) {
 
-			if ((j % 3 == 0) && j != 0)
+			if ((a % 3 == 0) && a != 0)
 				System.out.print(" ");
 			System.out.print(charArray[i]);
-			j++;
+			a++;
 		}
 
 	}
