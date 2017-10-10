@@ -18,15 +18,15 @@ public class Task7 {
 		int t = b + c;
 
 		if (q <= e && b <= f && d <= f) {
-			System.out.println("Дом помещается на участке");
+			System.out.println("РџРѕРјРµС‰Р°СЋС‚СЃСЏ");
 		} else if (w <= e && a <= f && c <= f) {
-			System.out.println("Дом помещается на участке");
+			System.out.println("РџРѕРјРµС‰Р°СЋС‚СЃСЏ");
 		} else if (r <= e && b <= f && c <= f) {
-			System.out.println("Дом помещается на участке");
+			System.out.println("РџРѕРјРµС‰Р°СЋС‚СЃСЏ");
 		} else if (t <= e && a <= f && d <= f) {
-			System.out.println("Дом помещается на участке");
-		} else
-			System.out.println("Дом не помещается на участке");
+			System.out.println("РџРѕРјРµС‰Р°СЋС‚СЃСЏ");
+		} else {
+			System.out.println("РќРµ РїРѕРјРµС‰Р°СЋС‚СЃСЏ");
+		}
 	}
-
 }

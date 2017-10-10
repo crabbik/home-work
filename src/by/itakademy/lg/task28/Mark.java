@@ -22,8 +22,7 @@ public class Mark {
 
 	@Override
 	public String toString() {
-		return "Mark [Фамилия " + fName + ", Имя " + lName + ", оценка " + mark
-				+ "]";
+		return "Mark [Р¤Р°РјРёР»РёСЏ" + fName + ", РРјСЏ " + lName + ", РћС†РµРЅРєР° " + mark + "]";
 	}
 
 }

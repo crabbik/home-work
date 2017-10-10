@@ -3,7 +3,7 @@ package by.itakademy.lg.task11;
 public class Task11 {
 
 	public static void main(String[] args) {
-		int n = 17;
+		int n = 18;
 		int i;
 		boolean isComposite = false;
 		for (i = 2; i < n; i++) {
@@ -13,9 +13,9 @@ public class Task11 {
 			}
 		}
 		if (isComposite) {
-			System.out.println("число составное ");
+			System.out.println("Р§РёСЃР»Рѕ СЃРѕСЃС‚Р°РІРЅРѕРµ ");
 		} else {
-			System.out.println("число  простое ");
+			System.out.println("Р§РёСЃР»Рѕ РїСЂРѕСЃС‚РѕРµ");
 		}
 	}
 

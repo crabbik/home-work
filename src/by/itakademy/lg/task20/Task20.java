@@ -4,7 +4,7 @@ public class Task20 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "    Текстовая, строка, с несколькими, запятыми ";
+		String str = "   Р–РёР·РЅСЊ Рё РЎРјРµСЂС‚СЊ. Р§С‚Рѕ РјС‹ Р·РЅР°РµРј Рѕ РЅРёС…? РќРµРјРЅРѕРіРѕ. ";
 		int a = 0;
 		char b;
 		char word;

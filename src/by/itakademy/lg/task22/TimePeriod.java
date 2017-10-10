@@ -29,8 +29,7 @@ public class TimePeriod {
 	private long timeTo;
 
 	public void printDate() {
-		String str = String.format(
-				"Начало = %s, конец = %s, продолжительность = %s", timeFrom,timeTo, timeTo - timeFrom);
+		String str = String.format("РќР°С‡Р°Р»Рѕ %s, РєРѕРЅРµС† %s, РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ %s", timeFrom, timeTo, timeTo - timeFrom);
 		System.out.println(str);
 
 	}
@@ -39,16 +38,18 @@ public class TimePeriod {
 		return (int) ((timeTo - timeFrom) / 1000);
 
 	}
-	public int compareTo(TimePeriod another){
-				
-		if (this.getTotalSeconds()<another.getTotalSeconds()){
-			return -1;}
-			
-		else if(this.getTotalSeconds()>another.getTotalSeconds())
-		{return 1;}
-			else 
-				{return 0;}
-		
-		
+
+	public int compareTo(TimePeriod another) {
+
+		if (this.getTotalSeconds() < another.getTotalSeconds()) {
+			return -1;
+		}
+
+		else if (this.getTotalSeconds() > another.getTotalSeconds()) {
+			return 1;
+		} else {
+			return 0;
+		}
+
 	}
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+
 public class Task26 {
 
 	public static void main(String[] args) {
@@ -16,11 +17,15 @@ public class Task26 {
 		}
 		System.out.println(listPoints);
 
-		for (Mark point : listPoints) {
-			if (point.getMark() < 3) {
-				listPoints.remove(point);
+		for (int i = 0; i < listPoints.size(); i++) {
+			int n = listPoints.get(i).getMark();
+
+			if (n < 3) {
+				listPoints.remove(i);
+				i--;
 			}
 		}
+
 		System.out.println(listPoints);
 	}
 

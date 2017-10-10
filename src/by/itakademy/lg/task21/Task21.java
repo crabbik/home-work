@@ -3,13 +3,13 @@ package by.itakademy.lg.task21;
 public class Task21 {
 
 	public static void main(String[] args) {
-		String str0 = "Строка один";
-		String str1 = "Строка два";
+		String str0 = "РЎС‚СЂРѕРєР° РѕРґРёРЅ";
+		String str1 = "РЎС‚СЂРѕРєР° РґРІР°";
 		StringBuilder strBuilder = new StringBuilder(str1);
 		long timeBefore = System.currentTimeMillis();
 
 		for (int i = 0; i <= 10; i++) {
-			str0 += " добавляется строка";
+			str0 += " РґРѕР±Р°РІР»СЏРµС‚СЃСЏ СЃС‚СЂРѕРєР°";
 
 		}
 
@@ -21,7 +21,7 @@ public class Task21 {
 
 		for (int i = 0; i <= 3; i++) {
 
-			strBuilder.append(" добавляется строка");
+			strBuilder.append(" РґРѕР±Р°РІР»СЏРµС‚СЃСЏ СЃС‚СЂРѕРєР°");
 
 		}
 		long timeAfter1 = System.currentTimeMillis();

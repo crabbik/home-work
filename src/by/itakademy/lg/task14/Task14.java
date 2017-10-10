@@ -10,9 +10,10 @@ public class Task14 {
 		int maxMark = marks[0];
 		int x = 0;
 		for (int i = 0; i < marks.length; i++) {
-			if (maxMark < marks[i])
+			if (maxMark < marks[i]) {
 				x = i;
-			maxMark = marks[i];
+				maxMark = marks[i];
+			}
 
 		}
 		System.out.println(x);

@@ -13,9 +13,9 @@ public class Task13 {
 			}
 		}
 		if (isComposite) {
-			System.out.println("число составное ");
+			System.out.println("Р§РёСЃР»Рѕ СЃРѕСЃС‚Р°РІРЅРѕРµ ");
 		} else {
-			System.out.println("число  простое ");
+			System.out.println("Р§РёСЃР»Рѕ РїСЂРѕСЃС‚РѕРµ");
 		}
 	}
 
