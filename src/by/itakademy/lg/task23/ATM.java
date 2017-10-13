@@ -1,66 +1,35 @@
 package by.itakademy.lg.task23;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ATM {
-	Integer count20 = 0;
-	Integer count50 = 0;
-	Integer count100 = 0;
 
-	public void addCount20(Integer add20) {
-		this.count20 += add20;
+	private  List<Slot> slotAtm = new ArrayList<Slot>();
 
+	public void Atm() {
+
+		slotAtm.add(new Slot(100));
+		slotAtm.add(new Slot(50));
+		slotAtm.add(new Slot(20));
 	}
 
-	public int getCount20() {
-		return count20;
-	}
-
-	public void addCount50(Integer add50) {
-		this.count50 += add50;
-
-	}
-
-	public int getCount50() {
-		return count50;
-	}
-
-	public void addCount100(Integer add100) {
-		this.count100 += add100;
-
-	}
-
-	public int getCount100() {
-		return count100;
-	}
-
-	public boolean cashOut(Integer cash) {
-
-		if (getBalance() < cash) {
-			return false;
-		} else if ((cash % 20 != 0) && (cash % 50 != 0) && (cash % 100 != 0)) {
-			return false;
-
+	public void addMoney(Integer nominal, Integer quantity) {
+		for (Slot slot : slotAtm) {
+			if (slot.isApplicable(nominal)) {
+				slot.addQuantity(quantity);
+			}
 		}
-		// else if
-		// Дописать тут условия по купюрам и их количеству
-		else {
-			return true;
+	}
+
+	public boolean cashOut(Integer sum) {
+
+		return false;
+	}
+
+	public void informat() {
+		for (Slot slot : slotAtm) {
+			System.out.println("Slot " + slot.getNominal() + " count " + slot.getQuantity());
 		}
-
 	}
-
-	ATM(int count20, int count50, int count100) {
-		this.count20 = +count20;
-		this.count50 = +count50;
-		this.count100 = +count100;
-
-	}
-
-	public ATM() {
-		this(0, 0, 0);
-	}
-
-	public int getBalance() {
-		return (count20 * 20) + (count50 * 50) + (count100 * 100);
-	}
-
 }

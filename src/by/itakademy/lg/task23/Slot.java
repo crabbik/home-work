@@ -1,8 +1,10 @@
 package by.itakademy.lg.task23;
 
-class Slot {
+import java.util.List;
+
+public class Slot {
 	private Integer nominal;
-	private Integer quantite;
+	private Integer quantity;
 
 	public Integer getNominal() {
 		return nominal;
@@ -12,12 +14,12 @@ class Slot {
 		this.nominal = nominal;
 	}
 
-	public Integer getQuantite() {
-		return quantite;
+	public Integer getQuantity() {
+		return quantity;
 	}
 
-	public void setQuantite(Integer quantite) {
-		this.quantite = quantite;
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
 	}
 
 	public Slot(Integer nominal) {
@@ -26,8 +28,37 @@ class Slot {
 
 	}
 
-	public void addQuantite(Integer add20) {
+	public void addQuantity(Integer nom) {
+		this.quantity = this.quantity+nom;
 
 	}
+
+	public boolean isApplicable(Integer nom) {
+		if (this.nominal == nom) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Slot [nominal=" + nominal + ", quantity=" + quantity + "]";
+	}
+	
+	public SlotResult cashOut(Integer sum, List<Slot> slot) {
+		if (sum != 30 && sum != 10) {
+			SlotResult res = new SlotResult();
+			for (Slot slot2 : slot) {
+				res.search(sum, slot2);
+			}
+
+			return res;
+		} else {
+
+			return null;
+		}
+	}
+
 
 }
