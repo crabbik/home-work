@@ -40,25 +40,20 @@ public class Slot {
 			return false;
 		}
 	}
+	public SlotResult takeMoney(int summ){
+		int q= summ/nominal;
+		if(q>this.quantity){
+			q=0;
+		}
+		return SlotResult(this.nominal,q);
+	}
 
 	@Override
 	public String toString() {
 		return "Slot [nominal=" + nominal + ", quantity=" + quantity + "]";
 	}
 	
-	public SlotResult cashOut(Integer sum, List<Slot> slot) {
-		if (sum != 30 && sum != 10) {
-			SlotResult res = new SlotResult();
-			for (Slot slot2 : slot) {
-				res.search(sum, slot2);
-			}
 
-			return res;
-		} else {
-
-			return null;
-		}
-	}
 
 
 }
