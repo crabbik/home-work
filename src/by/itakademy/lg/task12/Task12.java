@@ -16,13 +16,15 @@ public class Task12 {
 			a = 1;
 		}
 
-		System.out.println(String.format("Число %s в бухгалтерском формате: ", n));
+		System.out.println(String.format("Число %s в бухгалтерском формате: ",
+				n));
 		for (int i = 0; i < charArray.length; i++) {
 
-			if ((a % 3 == 0) && a != 0)
+			if ((a % 3 == 0) && a != 0) {
 				System.out.print(" ");
-			System.out.print(charArray[i]);
-			a++;
+				System.out.print(charArray[i]);
+				a++;
+			}
 		}
 
 	}
