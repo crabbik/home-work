@@ -4,6 +4,10 @@ public class Slot {
 	private Integer nominal;
 	private Integer quantity;
 
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+
 	public Integer getNominal() {
 		return nominal;
 	}

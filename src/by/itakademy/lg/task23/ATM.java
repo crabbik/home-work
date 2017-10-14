@@ -12,6 +12,10 @@ public class ATM {
 		return slotAtm;
 	}
 
+	public void setSlotAtm(List<Slot> slotAtm) {
+		this.slotAtm = slotAtm;
+	}
+
 	public ATM(List<Slot> slotAtm) {
 		super();
 		this.slotAtm = slotAtm;
@@ -31,6 +35,7 @@ public class ATM {
 				for (Slot slot : slotAtm) {
 					if (slotResult.getNom() == slot.getNominal()) {
 						// TODO remove money
+						slot.setQuantity((slot.getQuantity() - slotResult.getSum()));
 					}
 				}
 

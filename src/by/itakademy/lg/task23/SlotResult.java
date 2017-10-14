@@ -12,7 +12,7 @@ public class SlotResult {
 
 	@Override
 	public String toString() {
-		return "SlotResult [nom=" + nom + ", sum=" + sum + "]";
+		return "SlotResult [Номинал " + nom + ", Кол-во купюр " + sum + "]";
 	}
 
 	public Integer getNom() {
