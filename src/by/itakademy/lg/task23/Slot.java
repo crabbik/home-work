@@ -1,7 +1,5 @@
 package by.itakademy.lg.task23;
 
-import java.util.List;
-
 public class Slot {
 	private Integer nominal;
 	private Integer quantity;
@@ -10,26 +8,28 @@ public class Slot {
 		return nominal;
 	}
 
-	public void setNominal(Integer nominal) {
-		this.nominal = nominal;
-	}
-
 	public Integer getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(Integer quantity) {
+	public Slot(Integer nominal, Integer quantity) {
+		super();
+		this.nominal = nominal;
 		this.quantity = quantity;
 	}
 
-	public Slot(Integer nominal) {
-		super();
-		this.nominal = nominal;
+	public SlotResult takeMoney(int summ) {
+		int q = summ / nominal;
 
+		if (q > this.quantity) {
+			q = 0;
+		}
+
+		return new SlotResult(this.nominal, q);
 	}
 
 	public void addQuantity(Integer nom) {
-		this.quantity = this.quantity+nom;
+		this.quantity = this.quantity + nom;
 
 	}
 
@@ -40,20 +40,10 @@ public class Slot {
 			return false;
 		}
 	}
-	public SlotResult takeMoney(int summ){
-		int q= summ/nominal;
-		if(q>this.quantity){
-			q=0;
-		}
-		return SlotResult(this.nominal,q);
-	}
 
 	@Override
 	public String toString() {
 		return "Slot [nominal=" + nominal + ", quantity=" + quantity + "]";
 	}
-	
-
-
 
 }
