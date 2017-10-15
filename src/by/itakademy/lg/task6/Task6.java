@@ -4,8 +4,8 @@ public class Task6 {
 
 	public static void main(String[] args) {
 		// не доконца доделал проверку по количеству дней в месяце,
-		int day = 31;
-		int month = 12;
+		int day = 30;
+		int month = 5;
 		int year = 1991;
 
 		nextDay(day, month, year);
@@ -21,14 +21,14 @@ public class Task6 {
 				month = 1;
 				year++;
 
-			} else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10
-					|| month == 12 && day == 31) {
+			} else if (day == 31 || month == 1 && month == 3 && month == 5 && month == 7 && month == 8 && month == 10
+					&& month == 12) {
 				month++;
 				day = 1;
-			} else if (month == 2 && day == 28) {
+			} else if (day == 28 && month == 2) {
 				month++;
 				day = 1;
-			} else if (month == 4 || month == 6 || month == 9 || month == 11 && day == 30 && day == 30) {
+			} else if (day == 30 || month == 4 && month == 6 && month == 9 && month == 11) {
 				month++;
 				day = 1;
 			} else {
@@ -49,8 +49,8 @@ public class Task6 {
 			return false;
 		}
 
-		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10
-				|| month == 12 && day > 0 && day < 32) {
+		if (day > 0 || day < 32
+				|| month == 1 && month == 3 && month == 5 && month == 7 && month == 8 && month == 10 && month == 12) {
 			return true;
 		}
 
@@ -58,7 +58,7 @@ public class Task6 {
 			return true;
 		}
 
-		if (month == 4 || month == 6 || month == 9 || month == 11 && day < 31 && day > 0) {
+		if (month == 4 && month == 6 && month == 9 && month == 11 || day < 31 || day > 0) {
 			return true;
 		}
 		return false;
