@@ -5,7 +5,7 @@ public class Task6 {
 	public static void main(String[] args) {
 		// не доконца доделал проверку по количеству дней в месяце,
 		int day = 31;
-		int month = 6;
+		int month = 12;
 		int year = 1991;
 
 		nextDay(day, month, year);
@@ -16,7 +16,12 @@ public class Task6 {
 		boolean a = valid(day, month);
 		if (a) {
 
-			if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10
+			if (month == 12 && day == 31) {
+				day = 1;
+				month = 1;
+				year++;
+
+			} else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10
 					|| month == 12 && day == 31) {
 				month++;
 				day = 1;
