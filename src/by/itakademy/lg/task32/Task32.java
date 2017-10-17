@@ -28,11 +28,11 @@ public class Task32 {
 				new FileInputStream("d:/students/JavaJD1/task32.txt"));
 
 		int sum =0;
-		int count=0;
+	//	int count=0;
 		while (dataInputStream.available() > 0) {
 			int k = dataInputStream.readInt();
 			sum +=k;
-			count ++;
+		//	count ++;
 			
 					System.out.print(k + " ");
 		}
