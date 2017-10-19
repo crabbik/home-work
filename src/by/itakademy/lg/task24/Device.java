@@ -1,6 +1,6 @@
 package by.itakademy.lg.task24;
 
-public class Devices {
+public class Device {
 	private double weight;
 	private double price;
 	private int color;

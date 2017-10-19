@@ -1,6 +1,6 @@
 package by.itakademy.lg.task24;
 
-public class Electrical extends Devices {
+public class ElectricalAppliance extends Device {
 	private int voltage;
 	private int power;
 
@@ -33,9 +33,9 @@ public class Electrical extends Devices {
 	public void printState() {
 
 		if (state) {
-			System.out.println("Прибор включен");
+			System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		} else {
-			System.out.println("Прибор выключен");
+			System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 
 		}
 	}

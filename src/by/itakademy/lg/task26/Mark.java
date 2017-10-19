@@ -1,9 +1,9 @@
 package by.itakademy.lg.task26;
 
 public class Mark {
-	String fName;
-	int lName;
-	int mark;
+	private String fName;
+	private int lName;
+	private int mark;
 
 	public int getMark() {
 		return mark;
