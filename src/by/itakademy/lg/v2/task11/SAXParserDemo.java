@@ -15,7 +15,7 @@ public class SAXParserDemo {
 
 		try {
 			File inputFile = new File(
-					"C:/Users/user/workspace/sample-gls/src/xmlparser/Task7.xml");
+					"D:\\eclipse-workspace\\home-work\\src\\by\\itakademy\\lg\\v2\\task7_9\\Task7.xml");
 			SAXParserFactory factory = SAXParserFactory.newInstance();
 			SAXParser saxParser = factory.newSAXParser();
 			userhandler = new UserHandler(pointsList);

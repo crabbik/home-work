@@ -19,11 +19,11 @@ public class Task10 {
 			SAXException, IOException {
 
 		File inputFile = new File(
-				"C:/Users/user/workspace/sample-gls/src/xmlparser/Task7.xml");
+				"D:\\eclipse-workspace\\home-work\\src\\by\\itakademy\\lg\\v2\\task7_9\\Task7.xml");
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(inputFile);
-		Element pointNodes = doc.getDocumentElement();
+	//Element pointNodes = doc.getDocumentElement();
 		NodeList points = doc.getElementsByTagName("point");
 		for (int i = 0; i < points.getLength(); i++) {
 			Node point = points.item(i);
