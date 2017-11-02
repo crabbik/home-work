@@ -2,9 +2,13 @@
 
 <pointlist>
 	<point>
+		<x>5</x>
+		<y>8</y>
 		<unit>cm</unit>
 	</point>
 	<point>
+		<x>10</x>
+		<y>17</y>
 		<unit>mm</unit>
 	</point>
 </pointlist>
