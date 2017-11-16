@@ -16,7 +16,6 @@ public class Start {
 			int number = scanner.nextInt();
 			Weight weight = new Weight(unit, number);
 			weight.converter();
-			;
 
 		} else if (quantity == 2) {
 			System.out.println("Выберите величину \n[1] - метр \n[2] - миля \n[3] - ярд \n[2] - фут");
